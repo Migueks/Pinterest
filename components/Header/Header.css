@@ -1,0 +1,191 @@
+@import url("../../style.css");
+
+header {
+  padding: 1rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  height: 5rem;
+}
+
+header .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.1rem;
+  height: 100%;
+}
+
+header .title:hover {
+  cursor: pointer;
+}
+
+header .title > h1 {
+  font-size: 20px;
+  color: var(--main-red-color);
+  font-weight: 600;
+  letter-spacing: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .title > h1 > a {
+  text-decoration: none;
+  color: var(--main-red-color);
+  line-height: 100%;
+}
+
+header .watch {
+  font-size: 16px;
+  font-weight: 600;
+  border: 0px;
+  padding: 0;
+  border-radius: 2rem;
+  height: 100%;
+  background-color: transparent;
+}
+
+header .watch:hover {
+  cursor: pointer;
+}
+
+header .explore {
+  font-size: 16px;
+  font-weight: 600;
+  border: 0px;
+  border-radius: 3rem;
+  background-color: var(--main-black-color);
+  color: var(--main-white-color);
+  height: 100%;
+  width: 5.375rem;
+}
+
+header .explore:hover {
+  cursor: pointer;
+}
+
+header .search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-grey-color);
+  width: 64%;
+  height: 100%;
+  border-radius: 3rem;
+}
+
+header .search:hover,
+header .search:hover .searchInput {
+  background-color: var(--secondary-grey-color);
+}
+
+header .searchImg {
+  height: 1rem;
+  margin: 1rem;
+  margin-right: 0;
+}
+
+header .searchInput {
+  border: 0;
+  font-size: 16px;
+  background-color: var(--main-grey-color);
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
+  margin-left: 0.5rem;
+  outline: none;
+}
+
+header .filters {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+header .order,
+header .countInput {
+  cursor: pointer;
+  border: 2px solid var(--main-black-color);
+  border-radius: 0.35rem;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.75);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header .order:focus,
+header .countInput:focus {
+  outline: none;
+}
+
+header .searchBtn {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3rem;
+  background-color: var(--main-black-color);
+  color: var(--main-white-color);
+  border: 0;
+  height: 100%;
+  width: 4.25%;
+  line-height: 100%;
+}
+
+header .searchBtn:hover {
+  cursor: pointer;
+}
+
+header .logInBtn {
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 3rem;
+  color: var(--main-black-color);
+  background-color: var(--main-grey-color);
+  width: 4.0759%;
+  height: 100%;
+  line-height: 100%;
+}
+
+header .logInBtn:hover {
+  cursor: pointer;
+  background-color: var(--secondary-grey-color);
+}
+
+header .signUpBtn {
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 3rem;
+  background-color: var(--main-red-color);
+  color: var(--main-white-color);
+  height: 100%;
+  width: 4.622%;
+}
+
+header .signUpBtn:hover {
+  cursor: pointer;
+  background-color: var(--secondary-red-color);
+}
+
+header .arrowDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+}
+
+header .arrowDiv:hover {
+  cursor: pointer;
+  background-color: var(--secondary-white-color);
+  border-radius: 3rem;
+}
+
+header .arrow {
+  height: 1rem;
+  width: 1rem;
+}
