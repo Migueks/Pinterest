@@ -34,7 +34,10 @@ const printPhotos = (photos) => {
     for (const photo of photos) {
       const li = document.createElement("li");
       li.innerHTML = `
+      <a href="${photo.links.download}" target="_blank">
       <img src="${photo.urls.regular}" alt="${photo.alt_description}" />
+      <span class="title">Click to open</span>
+      </a>
     `;
       container.appendChild(li);
     }
@@ -43,10 +46,21 @@ const printPhotos = (photos) => {
 
 buildWebApp();
 
-document.querySelector("#searchBtn").addEventListener("click", () => {
-  const value = document.querySelector("#searchInput").value;
+const searchButton = document.querySelector("#searchBtn");
+const searchInput = document.querySelector("#searchInput");
+
+const search = () => {
+  const value = searchInput.value;
   const photoNumValue = document.querySelector("#countInput").value;
   const orderPageValue = document.querySelector("#order").value;
   getPhotos(value, photoNumValue, orderPageValue);
-  document.querySelector("#searchInput").value = "";
+  searchInput.value = "";
+};
+
+searchButton.addEventListener("click", search);
+
+searchInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    search();
+  }
 });

@@ -189,3 +189,217 @@ header .arrow {
   height: 1rem;
   width: 1rem;
 }
+
+@media (max-width: 455px) {
+  header {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  header .title h1 {
+    display: none;
+  }
+
+  header .watch {
+    display: none;
+  }
+
+  header .explore {
+    display: none;
+  }
+
+  header .search {
+    width: 60%;
+  }
+
+  header .searchBtn {
+    width: 20%;
+  }
+
+  header .logInBtn {
+    display: none;
+  }
+
+  header .signUpBtn {
+    display: none;
+  }
+
+  header .arrowDiv {
+    display: none;
+  }
+
+  header .filters {
+    display: none;
+  }
+}
+
+@media (min-width: 456px) and (max-width: 550px) {
+  header {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  header .title h1 {
+    display: none;
+  }
+
+  header .watch {
+    display: none;
+  }
+
+  header .explore {
+    display: none;
+  }
+
+  header .search {
+    width: 55%;
+  }
+
+  header .searchBtn {
+    width: 15%;
+  }
+
+  header .logInBtn {
+    width: 15%;
+  }
+
+  header .signUpBtn {
+    display: none;
+  }
+
+  header .arrowDiv {
+    display: none;
+  }
+
+  header .filters {
+    display: none;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 800px) {
+  header {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  header .title h1 {
+    display: none;
+  }
+
+  header .watch {
+    display: none;
+  }
+
+  header .explore {
+    display: none;
+  }
+
+  header .search {
+    width: 55%;
+  }
+
+  header .searchBtn {
+    width: 15%;
+  }
+
+  header .logInBtn {
+    width: 15%;
+  }
+
+  header .signUpBtn {
+    display: none;
+  }
+
+  header .arrowDiv {
+    display: none;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  header {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  header .watch {
+    display: none;
+  }
+
+  header .explore {
+    display: none;
+  }
+
+  header .search {
+    width: 48%;
+  }
+
+  header .searchBtn {
+    width: 10%;
+  }
+
+  header .logInBtn {
+    width: 10%;
+  }
+
+  header .signUpBtn {
+    width: 10%;
+  }
+
+  header .arrowDiv {
+    display: none;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
+  header {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  header .explore {
+    width: 7%;
+  }
+
+  header .search {
+    width: 50%;
+  }
+
+  header .searchBtn {
+    width: 7%;
+  }
+
+  header .logInBtn {
+    width: 7%;
+  }
+
+  header .signUpBtn {
+    width: 7%;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1600px) {
+  header {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  header .explore {
+    width: 5%;
+  }
+
+  header .search {
+    width: 60%;
+  }
+
+  header .searchBtn {
+    width: 5%;
+  }
+
+  header .logInBtn {
+    width: 5%;
+  }
+
+  header .signUpBtn {
+    width: 5%;
+  }
+}

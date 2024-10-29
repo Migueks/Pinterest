@@ -12,10 +12,70 @@
   object-fit: cover;
   border-radius: 1rem;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 h2,
 h3,
 h4 {
   padding: 1rem 4.875rem 0.5rem;
+}
+
+#results:hover img:not(:hover) {
+  filter: saturate(30%) blur(1px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 455px) {
+  #results {
+    padding: 1.25rem 2rem;
+  }
+
+  h3 {
+    padding: 1rem 2rem 0.5rem;
+  }
+}
+
+@media (min-width: 456px) and (max-width: 550px) {
+  #results {
+    padding: 1.25rem 2.5rem;
+  }
+
+  h3 {
+    padding: 1rem 2.5rem 0.5rem;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 800px) {
+  #results {
+    padding: 1.25rem 3rem;
+  }
+
+  h3 {
+    padding: 1rem 3rem 0.5rem;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  #results {
+    padding: 1.25rem 3.5rem;
+  }
+
+  h3 {
+    padding: 1rem 3.5rem 0.5rem;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
+  #results {
+    padding: 1.25rem 4rem;
+  }
+
+  h3 {
+    padding: 1rem 4rem 0.5rem;
+  }
 }
