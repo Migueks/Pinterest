@@ -13,12 +13,16 @@ const buildWebApp = () => {
 const CLIENT_ID = import.meta.env.VITE_CLIENT_ID;
 
 const getPhotos = async (keyword, photoNum, orderPage) => {
-  const data = await fetch(
-    `https://api.unsplash.com/search/photos?page=1&query=${keyword}&per_page=${photoNum}&order_by=${orderPage}&client_id=${CLIENT_ID}`
-  );
-  const results = await data.json();
-  const photos = results.results;
-  printPhotos(photos);
+  try {
+    const data = await fetch(
+      `https://api.unsplash.com/search/photos?page=1&query=${keyword}&per_page=${photoNum}&order_by=${orderPage}&client_id=${CLIENT_ID}`
+    );
+    const results = await data.json();
+    const photos = results.results;
+    printPhotos(photos);
+  } catch (error) {
+    console.log("There was an error in the search: ", error);
+  }
 };
 
 const printPhotos = (photos) => {
