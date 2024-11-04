@@ -228,8 +228,11 @@ header .arrow {
     display: none;
   }
 
-  header .filters {
-    display: none;
+  .filters {
+    position: absolute;
+    top: 13%;
+    left: 8%;
+    width: 100%;
   }
 }
 
@@ -271,8 +274,11 @@ header .arrow {
     display: none;
   }
 
-  header .filters {
-    display: none;
+  .filters {
+    position: absolute;
+    top: 13%;
+    left: 8%;
+    width: 100%;
   }
 }
 
