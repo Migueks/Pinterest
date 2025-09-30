@@ -14,7 +14,7 @@ const template = () => `
   <div class="filters">
     <select id="order" class="order">
       <option value="latest">latest</option>
-      <option value="relevant"> relevant</relevant>
+      <option value="relevant">relevant</relevant>
     </select>
     <select id="countInput" class="countInput">
       <option value="10">10</option>
